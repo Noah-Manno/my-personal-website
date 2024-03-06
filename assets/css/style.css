@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: helvetica;
 }
 
 header {
@@ -10,6 +11,25 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+}
+
+nav ul li {
+    float: right;
+    list-style-type: none;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    padding-right: 35px;
+    padding-left: 35px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+nav ul li a:hover {
+    color: #76cdf2;
 }
 
 .background-1 {
@@ -35,20 +55,23 @@ header {
 #greeting{
     font-size: 83px;
     color: #ffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
     padding-top: 5%;
+    font-weight: 600;
+}
+
+#name-is {
+    font-size: 83px;
+    color: #ffff;
+    font-weight: 600;
 }
 
 #Noah-Manno {
     font-size: 83px;
     color: #76cdf2;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
+    font-weight: 600;
 }
 
 .subtitle {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 34.5px;
     text-transform: uppercase;
     color: #dde3e7;
@@ -77,8 +100,7 @@ header {
 
 h2 {
     color: white;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 100px;
     text-align: center;
     letter-spacing: 10px;
@@ -98,8 +120,9 @@ main section p {
 
 h3 {
     color: white;
-    font-size: 22px;
+    font-size: 14px;
     text-align: center;
+    letter-spacing: 8px;
 }
 
 .about-me {
@@ -112,6 +135,30 @@ h3 {
     align-self: center;
 }
 
+.about-me-text p {
+    font-weight: 100;
+    color: #dde3e7;
+}
+
 .see-my-projects {
-    flex: 1 0 100%
+    flex: 1 0 100%;
+}
+
+.see-my-projects a {
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.button {
+    background-color: #76cdf2;
+    margin-left: 35%;
+    margin-right: 35%;
+    padding-top: 1.5%;
+    padding-bottom: 1.5%;
+    margin-bottom: 10%;
+    border-radius: 200px;
+}
+
+a h3:hover{
+    color: lightslategray;
 }
