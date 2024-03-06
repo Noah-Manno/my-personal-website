@@ -13,8 +13,13 @@ header {
     background-repeat: no-repeat;
 }
 
+nav ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+}
+
 nav ul li {
-    float: right;
     list-style-type: none;
     padding-top: 35px;
     padding-bottom: 25px;
@@ -90,9 +95,10 @@ nav ul li a:hover {
 }
 
 .headshot {
-    flex: 1 0 50%;
+    flex: 1 1 50%;
     align-self: center;
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
@@ -162,3 +168,78 @@ h3 {
 a h3:hover{
     color: lightslategray;
 }
+
+@media screen and (max-width: 497px) {
+#greeting {
+    font-size: 60px;
+}
+#name-is {
+    font-size: 60px;
+}
+#Noah-Manno {
+    font-size: 60px;
+}
+
+.headshot img {
+    width: 80%;
+}
+h2 {
+    font-size: 60px;
+}
+
+nav ul {
+    flex-direction: column;
+    align-content: flex-end;
+}
+
+nav ul li {
+    border-bottom: solid white 1px;
+}
+.button {
+    margin-left: 25%;
+    margin-right: 25%;
+}
+main section p {
+    font-size: 22px;
+}
+
+h3 {
+    font-size: 12px;
+}
+}
+
+@media screen and (max-width: 359px) {
+    #greeting {
+        font-size: 40px;
+    }
+    #name-is {
+        font-size: 40px;
+    }
+    #Noah-Manno {
+        font-size: 40px;
+    }
+    
+    .headshot img {
+        width: 70%;
+    }
+    h2 {
+        font-size: 50px;
+    }
+
+    .subtitle {
+        font-size: 28px;
+    }
+    main section p {
+        font-size: 18px;
+    }
+
+    .button {
+        margin-left: 15%;
+        margin-right: 15%;
+    }
+
+    h3 {
+        font-size: 10px;
+    }
+    }
+
