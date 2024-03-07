@@ -74,12 +74,45 @@ nav ul li a:hover {
     font-family: "Raleway", sans-serif;
 }
 
+#greeting{
+    animation: slide-right 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -200%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
+
+
 #name-is {
     font-size: 83px;
     color: #ffff;
     font-weight: 100;
     font-family: "Raleway", sans-serif;
 }
+
+#name-is {
+    animation: slide-right 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-right {
+  from {
+    margin-left: -200%;
+  }
+
+  to {
+    margin-left: 0%;
+  }
+}
+
 
 #Noah-Manno {
     font-size: 83px;
@@ -88,6 +121,19 @@ nav ul li a:hover {
     font-family: "Raleway", sans-serif;
     background-color: rgba(0, 0, 0, .2); 
     box-shadow: 20px 20px 20px;
+    opacity: 0;
+}
+
+#Noah-Manno {
+    animation-name: openingfade;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes openingfade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 .subtitle {
@@ -96,6 +142,14 @@ nav ul li a:hover {
     color: #dde3e7;
     font-weight: lighter;
     margin-top: 3%;
+    opacity: 0;
+}
+
+.subtitle {
+    animation-name: openingfade;
+    animation-duration: 4s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
 }
 
 .heading {
@@ -115,6 +169,16 @@ nav ul li a:hover {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+/*headshot animation*/
+.headshot {
+    animation: openingfade ease 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes openingfade {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
 }
 
 
