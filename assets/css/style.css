@@ -1,9 +1,10 @@
+/* margin and padding reset */
 * {
     margin: 0;
     padding: 0;
     font-family: helvetica;
 }
-
+/* font from google font*/
 .raleway-font {
   font-family: "Raleway", sans-serif;
   font-optical-sizing: auto;
@@ -11,6 +12,7 @@
   font-style: normal;
 }
 
+/* header and nav bar background and size */
 header {
     min-height: 12.5vh;
     background-color: black;
@@ -19,13 +21,13 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
 }
-
+/* nav bar flexbox*/
 nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
 }
-
+/*nav bar size */
 nav ul li {
     list-style-type: none;
     padding-top: 35px;
@@ -33,6 +35,7 @@ nav ul li {
     padding-right: 35px;
     padding-left: 35px;
 }
+
 nav ul li a {
     text-decoration: none;
     color: white;
@@ -46,6 +49,34 @@ nav ul li a:hover {
     color: #76cdf2;
 }
 
+/* nav bar animations */
+#projects-nav {
+    animation: slide-down 1s;
+    animation-fill-mode: forwards;
+}
+
+#portfolio-nav {
+    animation: slide-down 1.5s;
+    animation-fill-mode: forwards;
+}
+
+#github-nav {
+    animation: slide-down 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-down{
+    from {
+      margin-top: -200%;
+    }
+  
+    to {
+      margin-top: 0%;
+    }
+  }
+/* nav bar animations */
+
+/* main section background 1 */
 .background-1 {
     min-height: 80vh;
     background-image: url(../images/Background.jpg);
@@ -55,7 +86,7 @@ nav ul li a:hover {
     display: flex;
     flex-wrap: wrap;
 }
-
+/* main section background 2 */
 .background-2 {
     min-height: 80vh;
     background-image: url(../images/Background-2.jpg);
@@ -66,6 +97,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 
+/* "Hello my name is style */
 #greeting{
     font-size: 83px;
     color: #ffff;
@@ -73,24 +105,6 @@ nav ul li a:hover {
     font-weight: 100;
     font-family: "Raleway", sans-serif;
 }
-
-#greeting{
-    animation: slide-right 2s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes slide-right {
-  from {
-    margin-left: -200%;
-  }
-
-  to {
-    margin-left: 0%;
-  }
-}
-
-
-
 #name-is {
     font-size: 83px;
     color: #ffff;
@@ -98,7 +112,9 @@ nav ul li a:hover {
     font-family: "Raleway", sans-serif;
 }
 
-#name-is {
+
+/* "Hello my name is" animation */
+#greeting, #name-is {
     animation: slide-right 2s;
     animation-fill-mode: forwards;
 }
@@ -113,7 +129,7 @@ nav ul li a:hover {
   }
 }
 
-
+/* Name style */
 #Noah-Manno {
     font-size: 83px;
     color: #76cdf2;
@@ -124,6 +140,7 @@ nav ul li a:hover {
     opacity: 0;
 }
 
+/* Name animation */
 #Noah-Manno {
     animation-name: openingfade;
     animation-duration: 4s;
@@ -136,6 +153,7 @@ nav ul li a:hover {
     100% {opacity: 1;}
 }
 
+/* subtitle style */
 .subtitle {
     font-size: 34.5px;
     text-transform: uppercase;
@@ -145,14 +163,16 @@ nav ul li a:hover {
     opacity: 0;
 }
 
+/* subtitle animation */
 .subtitle {
     animation-name: openingfade;
     animation-duration: 4s;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-delay: 1.5s;
 }
 
-.heading {
+/* main flexbox */
+.welcome-message {
     flex: 1 0 50%;
     flex-wrap: wrap;
     flex-direction: column;
@@ -162,6 +182,7 @@ nav ul li a:hover {
     align-items: center;
 }
 
+/* headshot flexbox */
 .headshot {
     flex: 1 1 50%;
     align-self: center;
@@ -176,12 +197,7 @@ nav ul li a:hover {
     animation-fill-mode: forwards;
 }
 
-@keyframes openingfade {
-    0% {opacity: 0;}
-    100% {opacity: 1;}
-}
-
-
+/* about me title styling */
 h2 {
     color: white;
     font-family: "Raleway", sans-serif;
@@ -191,7 +207,7 @@ h2 {
     letter-spacing: 10px;
     text-transform: uppercase;
 }
-
+/* about me text styling */
 main section p {
     color: gray;
     font-size: 22pt;
@@ -203,10 +219,10 @@ main section p {
     line-height: 40px;
 }
 
+/* about me flexbox */
 .about-me {
     flex: 1 0 30%;
     align-self: center;
-
 }
 
 .about-me-text {
@@ -219,6 +235,7 @@ main section p {
     color: #dde3e7;
 }
 
+/* see my projects button */
 .see-my-projects {
     flex: 0 100%;
     display: flex;
@@ -227,6 +244,7 @@ main section p {
     margin: 3%;
 }
 
+/* see my projects link styling */
 .see-my-projects a {
     align-self: center;
     text-decoration: none;
@@ -244,6 +262,11 @@ main section p {
 .see-my-projects a:hover{
     color: lightslategray;
     background-color: #dde3e7;
+}
+
+/* section 2 content animation */
+.about-me, .about-me-text, .see-my-projects {
+    animation: openingfade 5s;
 }
 
 @media screen and (max-width: 497px) {
@@ -275,6 +298,21 @@ nav ul li {
 main section p {
     font-size: 22px;
 }
+
+#projects-nav, #portfolio-nav, #github-nav {
+    animation: slide-left 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes slide-left {
+    from {
+      margin-right: -200%;
+    }
+  
+    to {
+      margin-right: 0%;
+    }
+  }
 }
 
 @media screen and (max-width: 359px) {
