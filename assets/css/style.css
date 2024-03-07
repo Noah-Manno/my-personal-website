@@ -312,13 +312,14 @@ flex-wrap: wrap;
 background-color: rgba(0, 0, 0, .4);
 margin: 20px;
 justify-content: space-around;
+border-radius: 20px;
 }
 
 .websites {
     border: 5px solid #2b1821;
     flex: 2 1 500px;
+    border-radius: 20px;
 }
-
 
 .align-img {
 text-align: center;
@@ -328,8 +329,9 @@ text-align: center;
     width: 80%;
     height: auto;
     border-radius: 300px;
+    border: 2px solid white;
+    margin-bottom: 20px;
 }
-
 
 @media screen and (max-width: 497px) {
 #greeting {
