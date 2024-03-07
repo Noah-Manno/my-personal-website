@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     font-family: helvetica;
+    scroll-behavior: smooth;
 }
 /* font from google font*/
 .raleway-font {
@@ -55,7 +56,7 @@ nav ul li a:hover {
     animation-fill-mode: forwards;
 }
 
-#portfolio-nav {
+#about-me-nav {
     animation: slide-down 1.5s;
     animation-fill-mode: forwards;
 }
@@ -77,7 +78,7 @@ nav ul li a:hover {
 /* nav bar animations */
 
 /* main section background 1 */
-.background-1 {
+.profile {
     min-height: 80vh;
     background-image: url(../images/Background.jpg);
     background-position: center;
@@ -87,7 +88,7 @@ nav ul li a:hover {
     flex-wrap: wrap;
 }
 /* main section background 2 */
-.background-2 {
+.bio {
     min-height: 80vh;
     background-image: url(../images/Background-2.jpg);
     background-position: center;
@@ -220,7 +221,7 @@ main section p {
 }
 
 /* about me flexbox */
-.about-me {
+#about-me {
     flex: 1 0 30%;
     align-self: center;
 }
@@ -235,8 +236,8 @@ main section p {
     color: #dde3e7;
 }
 
-/* see my projects button */
-.see-my-projects {
+/* contact button */
+.contact-me {
     flex: 0 100%;
     display: flex;
     flex-wrap: wrap;
@@ -245,7 +246,7 @@ main section p {
 }
 
 /* see my projects link styling */
-.see-my-projects a {
+.contact-me a {
     align-self: center;
     text-decoration: none;
     text-transform: uppercase;
@@ -259,13 +260,13 @@ main section p {
     border-radius: 200px;
 }
 
-.see-my-projects a:hover{
+.contact-me a:hover{
     color: lightslategray;
     background-color: #dde3e7;
 }
 
 /* section 2 content animation */
-.about-me, .about-me-text, .see-my-projects {
+#about-me, .about-me-text, .contact-me {
     animation: openingfade 5s;
 }
 
@@ -299,7 +300,7 @@ main section p {
     font-size: 22px;
 }
 
-#projects-nav, #portfolio-nav, #github-nav {
+#projects-nav, #about-me-nav, #github-nav {
     animation: slide-left 2s;
     animation-fill-mode: forwards;
 }
