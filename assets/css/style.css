@@ -321,6 +321,12 @@ border-radius: 20px;
     border-radius: 20px;
 }
 
+.websites-big {
+    border: 5px solid #2b1821;
+    flex: 2 1 1000px;
+    border-radius: 20px;
+}
+
 .align-img {
 text-align: center;
 }
@@ -332,6 +338,36 @@ text-align: center;
     border: 2px solid white;
     margin-bottom: 20px;
 }
+.websites-big img {
+    width: 80%;
+    height: auto;
+    border-radius: 300px;
+    border: 2px solid white;
+    margin-bottom: 20px;
+}
+
+.contact-me-page {
+    min-height: 80vh;
+    background-image: url(../images/contact\ me\ background.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    border: 100px solid #2b1821;
+    outline: 2px solid white;
+    outline-offset: -100px;
+}
+
+.contact-me-page h4 {
+    font-size: 40px;
+    flex: 2 1 1000px;
+}
+
+
+
 
 @media screen and (max-width: 497px) {
 #greeting {
