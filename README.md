@@ -42,3 +42,5 @@ Please refer to the LICENSE in the repo.
 
 Github Repository: https://github.com/Noah-Manno/my-personal-website
 Deployed Link: https://noah-manno.github.io/my-personal-website/
+
+![deployed site screenshot](/assets/images/Mydeployedsite.png)
