@@ -265,11 +265,12 @@ main section p {
     background-color: #dde3e7;
 }
 
-/* section 2 and 3content animation */
+/* section 2 and 3 content animation */
 #about-me, .about-me-text, .contact-me, #projects, .container {
     animation: openingfade 5s;
 }
 
+/* projects page styling and background */
 .projects-page {
     min-height: 80vh;
     background-color: #2b1821;
@@ -278,12 +279,13 @@ main section p {
     flex-wrap: wrap;
 }
 
+/* projects flexbox */
 #projects {
     padding-top: 100px;
     flex: 1 0 100%;
     align-self: center;
 }
-
+/* projects title style */
 h3 {
     color: white;
     font-family: "Raleway", sans-serif;
@@ -294,6 +296,7 @@ h3 {
     text-transform: uppercase;
 }
 
+/* individual project titles */
 h4 {
     flex: 1 0 30%;
     color: white;
@@ -306,6 +309,7 @@ h4 {
     padding: 30px;
 }
 
+/* individual project container */
 .container {
 display: flex;
 flex-wrap: wrap;
@@ -314,13 +318,13 @@ margin: 20px;
 justify-content: space-around;
 border-radius: 20px;
 }
-
+/* smaller project */
 .websites {
     border: 5px solid #2b1821;
     flex: 2 1 500px;
     border-radius: 20px;
 }
-
+/* larger project */
 .websites-big {
     border: 5px solid #2b1821;
     flex: 2 1 1000px;
@@ -345,7 +349,7 @@ text-align: center;
     border: 2px solid white;
     margin-bottom: 20px;
 }
-
+/* contact me page styling */
 #contact-me-page {
     min-height: 70vh;
     background-image: url(../images/contact\ me\ background.jpg);
@@ -357,13 +361,13 @@ text-align: center;
     outline: 2px solid white;
     outline-offset: -50px;
 }
-
+/* Contact Me title */
 #contact-me-page h4 {
     padding-top: 120px;
     font-size: 40px;
     text-align: left;
 }
-
+/* contact me flexbox */
 #contact-flex {
     display: flex;
     flex-wrap: wrap;
@@ -391,6 +395,8 @@ text-align: center;
 }
 
 
+
+/*MEDIA QUERIES*/
 @media screen and (max-width: 497px) {
 #greeting {
     font-size: 60px;
